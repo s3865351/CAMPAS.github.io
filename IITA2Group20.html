@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: calibri;
+  color: solid black;
+  border: 3px solid MidnightBlue;
+  margin: 10px;
+  padding: 20px;
+}
+
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid black;
+  background-color: LightGray;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: orange;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: MediumSeaGreen;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  posittion: relative;
+  background-color: LightGray;
+ color: solid black;
+ border: 2px solid black;
+ margin: 20px;
+ padding: 20px;
+}
+
+/* Style the close button */
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.topright:hover {color: red;}
+
+.body {
+  background-color: LightGray;
+  color: solid black;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+.headingmain {
+  background-color: MediumSeaGreen;
+  color: MidnightBlue;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.headingsub {
+  background-color: MediumSeaGreen;
+  color: white;
+  padding: 7px;
+}
+
+</style>
+</head>
+<body>
+
+  <div class="body">
+    <a href="https://www.youtube.com/watch?v=ZA47U8hAD_E">Github Repository Link</a>
+  </div>
+
+<div>
+  <h1>Group 20 IIT</h1>
+  <p>Welcome to our task submission website</p>
+</div>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Team Profile')" id="defaultOpen">Team Profile</button>
+  <button class="tablinks" onclick="openCity(event, 'Ideal Jobs')">Ideal Jobs</button>
+  <button class="tablinks" onclick="openCity(event, 'Industry Data')">Industry Data</button>
+  <button class="tablinks" onclick="openCity(event, 'IT Work')">IT Work</button>
+  <button class="tablinks" onclick="openCity(event, 'IT Technologies')">IT Technologies</button>
+  <button class="tablinks" onclick="openCity(event, 'Project Ideas')">Project Ideas</button>
+  <button class="tablinks" onclick="openCity(event, 'Group Reflection')">Group Reflection</button>
+
+  </div>
+
+
+<div id="Team Profile" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h1 class="headingmain">Team Profile</h1>
+    <img src="Ad.png" style="float:right;max-width:260px;max-height:292px;">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus nulla orci, ullamcorper vestibulum nibh maximus in. Vivamus ultricies odio et ultrices volutpat. Nunc non neque non quam condimentum sollicitudin fermentum in eros. In vel vulputate mauris, eu eleifend turpis. Ut non urna ultricies, maximus dolor vel, tempus purus. Aliquam vitae tincidunt massa. Duis malesuada dui in dui fermentum accumsan. Sed consectetur libero a sem sollicitudin, et aliquam nunc hendrerit. Ut eu efficitur ipsum, mollis vestibulum turpis. Nulla mollis sem efficitur bibendum maximus. Ut interdum, dolor sed ultrices facilisis, ante tellus vestibulum magna, nec accumsan felis odio a ante. Etiam sem quam, auctor at lectus quis, auctor sagittis neque. Curabitur vehicula ultrices convallis. Donec et nisi aliquet, mollis libero et, sagittis enim. Ut nec nisi nunc.</p>
+    <p>Etiam dolor arcu, blandit non purus id, ultricies mollis lorem. Vestibulum malesuada vitae turpis a elementum. Nunc quis nulla sit amet ipsum dapibus tincidunt. Aliquam quis dolor posuere, dictum tortor non, iaculis leo. Fusce quis imperdiet sapien, ac pulvinar enim. Vestibulum et aliquet tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porttitor, arcu eget consequat aliquam, ipsum ex imperdiet mi, non posuere urna risus eu neque. Aenean a viverra tortor. Ut velit ligula, mollis in ipsum sed, congue mattis turpis.</p>
+    <p>Curabitur imperdiet egestas sem, quis consequat dui interdum lacinia. Donec eget massa blandit magna consequat laoreet. Etiam vel leo eleifend, euismod ex quis, eleifend justo. Ut ac porttitor eros, eu iaculis magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam dolor ipsum, eleifend id odio sit amet, fermentum commodo ex. Proin fermentum nibh et tortor egestas luctus. Nulla at viverra ante, in imperdiet mauris. Phasellus luctus viverra leo sed semper. Suspendisse tellus tortor, interdum sed tellus non, facilisis tempor ligula. Quisque bibendum vitae mi ac tristique. Sed mauris tortor, faucibus ac varius quis, consequat sit amet eros. Praesent nunc leo, mollis quis magna sit amet, ultricies efficitur velit. Fusce egestas elit id nisl rutrum ultrices. Sed cursus quis ipsum id ultricies.</p>
+    <p>Phasellus lacinia fermentum suscipit. Mauris cursus ipsum lacus, sed tristique libero vulputate id. Sed efficitur id mauris bibendum porttitor. Quisque augue nisl, imperdiet id aliquet ut, ullamcorper vel ante. Praesent rutrum posuere metus at molestie. Vivamus dignissim felis nec accumsan cursus. In placerat sit amet massa vel iaculis. Etiam tempus nulla eget risus vulputate elementum. Suspendisse at arcu interdum, maximus augue vitae, euismod nisi.</p>
+    <p>Aliquam sodales, mauris non malesuada fermentum, turpis orci pulvinar risus, sit amet posuere arcu nulla quis dolor. Vestibulum in egestas ante, vitae vehicula dui. Aenean et vulputate ante. Nullam hendrerit pharetra cursus. Duis vestibulum mi efficitur sapien congue aliquam. Phasellus accumsan dui metus, eget ultrices nisi placerat commodo. Nullam blandit nisl vitae arcu ultrices faucibus. Maecenas ac tellus sit amet lacus tincidunt molestie. Pellentesque in velit tristique, accumsan elit nec, vestibulum nulla. Duis lobortis ultricies augue vitae venenatis. Phasellus tempus faucibus aliquet. Aliquam vitae diam sed sem dignissim tincidunt tincidunt sodales turpis. Vivamus ut tempor magna, ullamcorper dictum nisi.</p>
+</div>
+
+<div id="Ideal Jobs" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h1 class="headingmain">Ideal Jobs</h1>
+  <h2 class="headingsub">Senior Systems Engineer</h2>
+  <p><a href="https://www.seek.com.au/job/50560905?type=standout#searchRequestToken=d46c96a2-155b-41a9-a530-1d303852b88d">Click here to visit the job advertisment.</a></p>
+  <img src="JobAdPage1.JPG" style="max-width:800px;height:auto">
+  <img src="JobAdPage2.JPG" style="max-width:800px;height:auto">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus nulla orci, ullamcorper vestibulum nibh maximus in. Vivamus ultricies odio et ultrices volutpat. Nunc non neque non quam condimentum sollicitudin fermentum in eros. In vel vulputate mauris, eu eleifend turpis. Ut non urna ultricies, maximus dolor vel, tempus purus. Aliquam vitae tincidunt massa. Duis malesuada dui in dui fermentum accumsan. Sed consectetur libero a sem sollicitudin, et aliquam nunc hendrerit. Ut eu efficitur ipsum, mollis vestibulum turpis. Nulla mollis sem efficitur bibendum maximus. Ut interdum, dolor sed ultrices facilisis, ante tellus vestibulum magna, nec accumsan felis odio a ante. Etiam sem quam, auctor at lectus quis, auctor sagittis neque. Curabitur vehicula ultrices convallis. Donec et nisi aliquet, mollis libero et, sagittis enim. Ut nec nisi nunc.</p>
+  <p>Etiam dolor arcu, blandit non purus id, ultricies mollis lorem. Vestibulum malesuada vitae turpis a elementum. Nunc quis nulla sit amet ipsum dapibus tincidunt. Aliquam quis dolor posuere, dictum tortor non, iaculis leo. Fusce quis imperdiet sapien, ac pulvinar enim. Vestibulum et aliquet tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porttitor, arcu eget consequat aliquam, ipsum ex imperdiet mi, non posuere urna risus eu neque. Aenean a viverra tortor. Ut velit ligula, mollis in ipsum sed, congue mattis turpis.</p>
+  <p>Curabitur imperdiet egestas sem, quis consequat dui interdum lacinia. Donec eget massa blandit magna consequat laoreet. Etiam vel leo eleifend, euismod ex quis, eleifend justo. Ut ac porttitor eros, eu iaculis magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam dolor ipsum, eleifend id odio sit amet, fermentum commodo ex. Proin fermentum nibh et tortor egestas luctus. Nulla at viverra ante, in imperdiet mauris. Phasellus luctus viverra leo sed semper. Suspendisse tellus tortor, interdum sed tellus non, facilisis tempor ligula. Quisque bibendum vitae mi ac tristique. Sed mauris tortor, faucibus ac varius quis, consequat sit amet eros. Praesent nunc leo, mollis quis magna sit amet, ultricies efficitur velit. Fusce egestas elit id nisl rutrum ultrices. Sed cursus quis ipsum id ultricies.</p>
+  <p>Phasellus lacinia fermentum suscipit. Mauris cursus ipsum lacus, sed tristique libero vulputate id. Sed efficitur id mauris bibendum porttitor. Quisque augue nisl, imperdiet id aliquet ut, ullamcorper vel ante. Praesent rutrum posuere metus at molestie. Vivamus dignissim felis nec accumsan cursus. In placerat sit amet massa vel iaculis. Etiam tempus nulla eget risus vulputate elementum. Suspendisse at arcu interdum, maximus augue vitae, euismod nisi.</p>
+  <p>Aliquam sodales, mauris non malesuada fermentum, turpis orci pulvinar risus, sit amet posuere arcu nulla quis dolor. Vestibulum in egestas ante, vitae vehicula dui. Aenean et vulputate ante. Nullam hendrerit pharetra cursus. Duis vestibulum mi efficitur sapien congue aliquam. Phasellus accumsan dui metus, eget ultrices nisi placerat commodo. Nullam blandit nisl vitae arcu ultrices faucibus. Maecenas ac tellus sit amet lacus tincidunt molestie. Pellentesque in velit tristique, accumsan elit nec, vestibulum nulla. Duis lobortis ultricies augue vitae venenatis. Phasellus tempus faucibus aliquet. Aliquam vitae diam sed sem dignissim tincidunt tincidunt sodales turpis. Vivamus ut tempor magna, ullamcorper dictum nisi.</p>
+</div>
+
+  <div id="Industry Data" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h1 class="headingmain">Industry Data</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus nulla orci, ullamcorper vestibulum nibh maximus in. Vivamus ultricies odio et ultrices volutpat. Nunc non neque non quam condimentum sollicitudin fermentum in eros. In vel vulputate mauris, eu eleifend turpis. Ut non urna ultricies, maximus dolor vel, tempus purus. Aliquam vitae tincidunt massa. Duis malesuada dui in dui fermentum accumsan. Sed consectetur libero a sem sollicitudin, et aliquam nunc hendrerit. Ut eu efficitur ipsum, mollis vestibulum turpis. Nulla mollis sem efficitur bibendum maximus. Ut interdum, dolor sed ultrices facilisis, ante tellus vestibulum magna, nec accumsan felis odio a ante. Etiam sem quam, auctor at lectus quis, auctor sagittis neque. Curabitur vehicula ultrices convallis. Donec et nisi aliquet, mollis libero et, sagittis enim. Ut nec nisi nunc.</p>
+  <p>Etiam dolor arcu, blandit non purus id, ultricies mollis lorem. Vestibulum malesuada vitae turpis a elementum. Nunc quis nulla sit amet ipsum dapibus tincidunt. Aliquam quis dolor posuere, dictum tortor non, iaculis leo. Fusce quis imperdiet sapien, ac pulvinar enim. Vestibulum et aliquet tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porttitor, arcu eget consequat aliquam, ipsum ex imperdiet mi, non posuere urna risus eu neque. Aenean a viverra tortor. Ut velit ligula, mollis in ipsum sed, congue mattis turpis.</p>
+  <p>Curabitur imperdiet egestas sem, quis consequat dui interdum lacinia. Donec eget massa blandit magna consequat laoreet. Etiam vel leo eleifend, euismod ex quis, eleifend justo. Ut ac porttitor eros, eu iaculis magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam dolor ipsum, eleifend id odio sit amet, fermentum commodo ex. Proin fermentum nibh et tortor egestas luctus. Nulla at viverra ante, in imperdiet mauris. Phasellus luctus viverra leo sed semper. Suspendisse tellus tortor, interdum sed tellus non, facilisis tempor ligula. Quisque bibendum vitae mi ac tristique. Sed mauris tortor, faucibus ac varius quis, consequat sit amet eros. Praesent nunc leo, mollis quis magna sit amet, ultricies efficitur velit. Fusce egestas elit id nisl rutrum ultrices. Sed cursus quis ipsum id ultricies.</p>
+  <p>Phasellus lacinia fermentum suscipit. Mauris cursus ipsum lacus, sed tristique libero vulputate id. Sed efficitur id mauris bibendum porttitor. Quisque augue nisl, imperdiet id aliquet ut, ullamcorper vel ante. Praesent rutrum posuere metus at molestie. Vivamus dignissim felis nec accumsan cursus. In placerat sit amet massa vel iaculis. Etiam tempus nulla eget risus vulputate elementum. Suspendisse at arcu interdum, maximus augue vitae, euismod nisi.</p>
+  <p>Aliquam sodales, mauris non malesuada fermentum, turpis orci pulvinar risus, sit amet posuere arcu nulla quis dolor. Vestibulum in egestas ante, vitae vehicula dui. Aenean et vulputate ante. Nullam hendrerit pharetra cursus. Duis vestibulum mi efficitur sapien congue aliquam. Phasellus accumsan dui metus, eget ultrices nisi placerat commodo. Nullam blandit nisl vitae arcu ultrices faucibus. Maecenas ac tellus sit amet lacus tincidunt molestie. Pellentesque in velit tristique, accumsan elit nec, vestibulum nulla. Duis lobortis ultricies augue vitae venenatis. Phasellus tempus faucibus aliquet. Aliquam vitae diam sed sem dignissim tincidunt tincidunt sodales turpis. Vivamus ut tempor magna, ullamcorper dictum nisi.</p>
+
+
+</div>
+
+<div id="IT Work" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h1 class="headingmain">IT Work</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus nulla orci, ullamcorper vestibulum nibh maximus in. Vivamus ultricies odio et ultrices volutpat. Nunc non neque non quam condimentum sollicitudin fermentum in eros. In vel vulputate mauris, eu eleifend turpis. Ut non urna ultricies, maximus dolor vel, tempus purus. Aliquam vitae tincidunt massa. Duis malesuada dui in dui fermentum accumsan. Sed consectetur libero a sem sollicitudin, et aliquam nunc hendrerit. Ut eu efficitur ipsum, mollis vestibulum turpis. Nulla mollis sem efficitur bibendum maximus. Ut interdum, dolor sed ultrices facilisis, ante tellus vestibulum magna, nec accumsan felis odio a ante. Etiam sem quam, auctor at lectus quis, auctor sagittis neque. Curabitur vehicula ultrices convallis. Donec et nisi aliquet, mollis libero et, sagittis enim. Ut nec nisi nunc.</p>
+  <p>Etiam dolor arcu, blandit non purus id, ultricies mollis lorem. Vestibulum malesuada vitae turpis a elementum. Nunc quis nulla sit amet ipsum dapibus tincidunt. Aliquam quis dolor posuere, dictum tortor non, iaculis leo. Fusce quis imperdiet sapien, ac pulvinar enim. Vestibulum et aliquet tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porttitor, arcu eget consequat aliquam, ipsum ex imperdiet mi, non posuere urna risus eu neque. Aenean a viverra tortor. Ut velit ligula, mollis in ipsum sed, congue mattis turpis.</p>
+  <p>Curabitur imperdiet egestas sem, quis consequat dui interdum lacinia. Donec eget massa blandit magna consequat laoreet. Etiam vel leo eleifend, euismod ex quis, eleifend justo. Ut ac porttitor eros, eu iaculis magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam dolor ipsum, eleifend id odio sit amet, fermentum commodo ex. Proin fermentum nibh et tortor egestas luctus. Nulla at viverra ante, in imperdiet mauris. Phasellus luctus viverra leo sed semper. Suspendisse tellus tortor, interdum sed tellus non, facilisis tempor ligula. Quisque bibendum vitae mi ac tristique. Sed mauris tortor, faucibus ac varius quis, consequat sit amet eros. Praesent nunc leo, mollis quis magna sit amet, ultricies efficitur velit. Fusce egestas elit id nisl rutrum ultrices. Sed cursus quis ipsum id ultricies.</p>
+  <p>Phasellus lacinia fermentum suscipit. Mauris cursus ipsum lacus, sed tristique libero vulputate id. Sed efficitur id mauris bibendum porttitor. Quisque augue nisl, imperdiet id aliquet ut, ullamcorper vel ante. Praesent rutrum posuere metus at molestie. Vivamus dignissim felis nec accumsan cursus. In placerat sit amet massa vel iaculis. Etiam tempus nulla eget risus vulputate elementum. Suspendisse at arcu interdum, maximus augue vitae, euismod nisi.</p>
+  <p>Aliquam sodales, mauris non malesuada fermentum, turpis orci pulvinar risus, sit amet posuere arcu nulla quis dolor. Vestibulum in egestas ante, vitae vehicula dui. Aenean et vulputate ante. Nullam hendrerit pharetra cursus. Duis vestibulum mi efficitur sapien congue aliquam. Phasellus accumsan dui metus, eget ultrices nisi placerat commodo. Nullam blandit nisl vitae arcu ultrices faucibus. Maecenas ac tellus sit amet lacus tincidunt molestie. Pellentesque in velit tristique, accumsan elit nec, vestibulum nulla. Duis lobortis ultricies augue vitae venenatis. Phasellus tempus faucibus aliquet. Aliquam vitae diam sed sem dignissim tincidunt tincidunt sodales turpis. Vivamus ut tempor magna, ullamcorper dictum nisi.</p>
+
+</div>
+
+<div id="IT Technologies" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h1 class="headingmain">IT Technologies</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus nulla orci, ullamcorper vestibulum nibh maximus in. Vivamus ultricies odio et ultrices volutpat. Nunc non neque non quam condimentum sollicitudin fermentum in eros. In vel vulputate mauris, eu eleifend turpis. Ut non urna ultricies, maximus dolor vel, tempus purus. Aliquam vitae tincidunt massa. Duis malesuada dui in dui fermentum accumsan. Sed consectetur libero a sem sollicitudin, et aliquam nunc hendrerit. Ut eu efficitur ipsum, mollis vestibulum turpis. Nulla mollis sem efficitur bibendum maximus. Ut interdum, dolor sed ultrices facilisis, ante tellus vestibulum magna, nec accumsan felis odio a ante. Etiam sem quam, auctor at lectus quis, auctor sagittis neque. Curabitur vehicula ultrices convallis. Donec et nisi aliquet, mollis libero et, sagittis enim. Ut nec nisi nunc.</p>
+  <p>Etiam dolor arcu, blandit non purus id, ultricies mollis lorem. Vestibulum malesuada vitae turpis a elementum. Nunc quis nulla sit amet ipsum dapibus tincidunt. Aliquam quis dolor posuere, dictum tortor non, iaculis leo. Fusce quis imperdiet sapien, ac pulvinar enim. Vestibulum et aliquet tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porttitor, arcu eget consequat aliquam, ipsum ex imperdiet mi, non posuere urna risus eu neque. Aenean a viverra tortor. Ut velit ligula, mollis in ipsum sed, congue mattis turpis.</p>
+  <p>Curabitur imperdiet egestas sem, quis consequat dui interdum lacinia. Donec eget massa blandit magna consequat laoreet. Etiam vel leo eleifend, euismod ex quis, eleifend justo. Ut ac porttitor eros, eu iaculis magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam dolor ipsum, eleifend id odio sit amet, fermentum commodo ex. Proin fermentum nibh et tortor egestas luctus. Nulla at viverra ante, in imperdiet mauris. Phasellus luctus viverra leo sed semper. Suspendisse tellus tortor, interdum sed tellus non, facilisis tempor ligula. Quisque bibendum vitae mi ac tristique. Sed mauris tortor, faucibus ac varius quis, consequat sit amet eros. Praesent nunc leo, mollis quis magna sit amet, ultricies efficitur velit. Fusce egestas elit id nisl rutrum ultrices. Sed cursus quis ipsum id ultricies.</p>
+  <p>Phasellus lacinia fermentum suscipit. Mauris cursus ipsum lacus, sed tristique libero vulputate id. Sed efficitur id mauris bibendum porttitor. Quisque augue nisl, imperdiet id aliquet ut, ullamcorper vel ante. Praesent rutrum posuere metus at molestie. Vivamus dignissim felis nec accumsan cursus. In placerat sit amet massa vel iaculis. Etiam tempus nulla eget risus vulputate elementum. Suspendisse at arcu interdum, maximus augue vitae, euismod nisi.</p>
+  <p>Aliquam sodales, mauris non malesuada fermentum, turpis orci pulvinar risus, sit amet posuere arcu nulla quis dolor. Vestibulum in egestas ante, vitae vehicula dui. Aenean et vulputate ante. Nullam hendrerit pharetra cursus. Duis vestibulum mi efficitur sapien congue aliquam. Phasellus accumsan dui metus, eget ultrices nisi placerat commodo. Nullam blandit nisl vitae arcu ultrices faucibus. Maecenas ac tellus sit amet lacus tincidunt molestie. Pellentesque in velit tristique, accumsan elit nec, vestibulum nulla. Duis lobortis ultricies augue vitae venenatis. Phasellus tempus faucibus aliquet. Aliquam vitae diam sed sem dignissim tincidunt tincidunt sodales turpis. Vivamus ut tempor magna, ullamcorper dictum nisi.</p>
+
+</div>
+
+<div id="Project Ideas" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h1 class="headingmain">Project Idea</h1>
+
+  <h2 class="headingsub">Overview</h2>
+
+  <p>The project will make it easier for golfers to find their golf balls. The project deliverables consist’ of two parts. One part is a machine that tracks the golf ball and guides the golfer to the ball. The other part is the golf ball that can be easily tracked by the machine. The project will need hardware for at least the machine. The project will need software integrated into the machine for all the needed functionalities that are desired.</p>
+
+  <h2 class="headingsub">Motivation</h2>
+
+  <p>I try each day to help people around me. This course is helping me to be able to use IT to make people’s lives better or easier. I would like to do a project that will help people. Projects with programming and hardware aspects could help me gain required experience and knowledge needed to work in my ideal job.</p>
+  <p>In every round of golf played around the world there is a ball hit to a spot that should be “fine” until you cannot find it. I played golf with a retired gentleman, he hit his ball to a lone tree surrounded by grass. I did not even think that there is a chance that the ball cannot be found. To my astonishment after 5 minutes of looking we could not find his golf ball.</p>
+  <p>I would like to make a round on the golf course more enjoyable. I would like to help this “fine” golf ball to be found rather than disappear.</p>
+
+  <h2 class="headingsub">Description</h2>
+
+  <p>The project idea is to create a golf ball that can be tracked and more easily found. Two possible methods by which this could be achieved would be through sound or light, or through tracking.</p>
+  <p>Sound or light option</p>
+  <p>This option involves the golf ball being redesigned to include a speaker or light inside it to be able to use human senses to find it. The ball would play a sound or shine a light for the golfer to hear or see. However, this could impede the quiet nature of golf. Additionally, the effectiveness of this option would be limited as some golfers cannot hear or see well. It would also be difficult to manufacture a light or speaker into the ball with all the strict regulations that are in place for golf balls. Given these insights, this idea would not be optimal.</p>
+  <p>Tracking option</p>
+  <p>Another option is to include something inside the golf ball to make it possible for a machine to find it. This machine could be a handheld device or a device that is fixed to a golf bag\buggy. It could also be tracked by a smart phone using an app. The golf ball would have a GPS tracker inside it. The device or phone would track the ball and guide the golfer to its location. The location of the ball would be displayed on a course map and as the golfer then arrives in the general area of the ball, an arrow or dot would direct the golfer to the golf ball. Despite the similar difficulties in manufacturing, this option would be more optimal due to the end result being more functional and practical for the user.</p>
+  <p>The tracking option is the preferred method of developing this project idea. There are a number of considerations that would need to be addressed for this idea to work effectively. Firstly, the ball would need to conform to ruling regulations. Some of the regulations relate to weight, size, shape and stiffness. Secondly, a GPS tracking chip would need to be made and imbedded into the golf ball that can withstand extreme conditions. Some include withstand high impacts, temperature changes, water and sand. Lastly, an app or tracking device would need to be developed that is user friendly.</p>
+
+  <h2 class="headingsub">Tools and Technologies</h2>
+
+  <p>The two main software and hardware tools required for this project would be the development of a GPS tracking chip to be placed inside the golf ball, and a device or app that the user can use to track the ball’s location.</p>
+  <p>GPS inside the golf ball</p>
+  <p>The technologies needed to successfully develop the ball would be:</p>
+  <p>•	GPS - for tracking</p>
+  <p>•	NFC – for charging the ball</p>
+  <p>•	Golf ball technology for optimal spin and ball speed</p>
+  <p>Device/app</p>
+  <p>The software for this would need to be developed to connect to the ball and accurately relay the location of the ball to the user.</p>
+
+  <h2 class="headingsub">Skills Required</h2>
+
+  <p>The skills required would be both in software and hardware fields. The development of the app UI would need skills of coding and programming. The GPS tracking within the app would need to be factored into the app development. The GPS tracking chip would need skills of circuit board design and creation, alongside putting a GPS node on the circuit board. The skill to incorporate NFC charging would also be needed. The skills of designing premium quality golf balls would be required to make the ball a viable replacement for current marketed golf balls whilst not losing performance gains.</p>
+  <p>The software for this project is very likely already developed but has not been integrated in this field. It would also be likely that the hardware required is available but again has not been integrated. This would increase the likeliness that this project idea would be very viable.</p>
+
+  <h2 class="headingsub">Outcome</h2>
+
+  <p>If the project is successful, golfers who find it difficult to see their ball, or who often lose their ball will be able to find it easily! Receiving a 2-shot penalty for a lost ball will be no more. This development will have a positive impact on the golfing community as players will enjoy the opportunity to play more often without the hassle and cost of losing of a ball, or multiple. Big companies such as Callaway, TaylorMade and Titleist would most probably want to patent the idea and make a considerable profit from it. It may cause contention amongst professional fields as those who have the trackable ball would be at an advantage. Thus, it may prove difficult to have this ball regulated in competitions as it would need to be approved by PGA associations.</p>
+</div>
+
+<div id="Group Reflection" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h1 class="headingmain">Group Reflection</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus nulla orci, ullamcorper vestibulum nibh maximus in. Vivamus ultricies odio et ultrices volutpat. Nunc non neque non quam condimentum sollicitudin fermentum in eros. In vel vulputate mauris, eu eleifend turpis. Ut non urna ultricies, maximus dolor vel, tempus purus. Aliquam vitae tincidunt massa. Duis malesuada dui in dui fermentum accumsan. Sed consectetur libero a sem sollicitudin, et aliquam nunc hendrerit. Ut eu efficitur ipsum, mollis vestibulum turpis. Nulla mollis sem efficitur bibendum maximus. Ut interdum, dolor sed ultrices facilisis, ante tellus vestibulum magna, nec accumsan felis odio a ante. Etiam sem quam, auctor at lectus quis, auctor sagittis neque. Curabitur vehicula ultrices convallis. Donec et nisi aliquet, mollis libero et, sagittis enim. Ut nec nisi nunc.</p>
+  <p>Etiam dolor arcu, blandit non purus id, ultricies mollis lorem. Vestibulum malesuada vitae turpis a elementum. Nunc quis nulla sit amet ipsum dapibus tincidunt. Aliquam quis dolor posuere, dictum tortor non, iaculis leo. Fusce quis imperdiet sapien, ac pulvinar enim. Vestibulum et aliquet tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porttitor, arcu eget consequat aliquam, ipsum ex imperdiet mi, non posuere urna risus eu neque. Aenean a viverra tortor. Ut velit ligula, mollis in ipsum sed, congue mattis turpis.</p>
+  <p>Curabitur imperdiet egestas sem, quis consequat dui interdum lacinia. Donec eget massa blandit magna consequat laoreet. Etiam vel leo eleifend, euismod ex quis, eleifend justo. Ut ac porttitor eros, eu iaculis magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam dolor ipsum, eleifend id odio sit amet, fermentum commodo ex. Proin fermentum nibh et tortor egestas luctus. Nulla at viverra ante, in imperdiet mauris. Phasellus luctus viverra leo sed semper. Suspendisse tellus tortor, interdum sed tellus non, facilisis tempor ligula. Quisque bibendum vitae mi ac tristique. Sed mauris tortor, faucibus ac varius quis, consequat sit amet eros. Praesent nunc leo, mollis quis magna sit amet, ultricies efficitur velit. Fusce egestas elit id nisl rutrum ultrices. Sed cursus quis ipsum id ultricies.</p>
+  <p>Phasellus lacinia fermentum suscipit. Mauris cursus ipsum lacus, sed tristique libero vulputate id. Sed efficitur id mauris bibendum porttitor. Quisque augue nisl, imperdiet id aliquet ut, ullamcorper vel ante. Praesent rutrum posuere metus at molestie. Vivamus dignissim felis nec accumsan cursus. In placerat sit amet massa vel iaculis. Etiam tempus nulla eget risus vulputate elementum. Suspendisse at arcu interdum, maximus augue vitae, euismod nisi.</p>
+  <p>Aliquam sodales, mauris non malesuada fermentum, turpis orci pulvinar risus, sit amet posuere arcu nulla quis dolor. Vestibulum in egestas ante, vitae vehicula dui. Aenean et vulputate ante. Nullam hendrerit pharetra cursus. Duis vestibulum mi efficitur sapien congue aliquam. Phasellus accumsan dui metus, eget ultrices nisi placerat commodo. Nullam blandit nisl vitae arcu ultrices faucibus. Maecenas ac tellus sit amet lacus tincidunt molestie. Pellentesque in velit tristique, accumsan elit nec, vestibulum nulla. Duis lobortis ultricies augue vitae venenatis. Phasellus tempus faucibus aliquet. Aliquam vitae diam sed sem dignissim tincidunt tincidunt sodales turpis. Vivamus ut tempor magna, ullamcorper dictum nisi.</p>
+</div>
+
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>

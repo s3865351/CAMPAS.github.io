@@ -5,8 +5,7 @@
 <style>
 body {
   font-family: calibri;
-  color: solid black;
-  border: 3px solid MidnightBlue;
+  color: black;
   margin: 10px;
   padding: 20px;
 }
@@ -20,9 +19,14 @@ div.relative {
 
 /* Style the tab */
 .tab {
+  color: MidnightBlue;
   overflow: hidden;
   border: 1px solid black;
   background-color: LightGray;
+  margin: 3px;
+  padding: 14px 16px;
+  float:left;
+  
 }
 
 /* Style the buttons inside the tab */
@@ -56,6 +60,7 @@ div.relative {
  border: 2px solid black;
  margin: 20px;
  padding: 20px;
+ float:left;
 }
 
 /* Style the close button */
@@ -67,7 +72,7 @@ div.relative {
 
 .topright:hover {color: red;}
 
-.body {
+.text {
   background-color: LightGray;
   color: solid black;
   border: 2px solid black;
@@ -77,6 +82,11 @@ div.relative {
 img {
   width: 100%;
   height: auto;
+  border: 2px solid black;
+  margin: 0px;
+  padding: 0px;
+  float:left
+  position: absolute;
 }
 
 .headingmain {
@@ -96,13 +106,12 @@ img {
 </head>
 <body>
 
-  <div class="body">
-    <a href="https://www.youtube.com/watch?v=ZA47U8hAD_E">Github Repository Link</a>
-  </div>
+<div class="text">
+    <a href="https://github.com/MattHally24/Team20.github.io">Github Repository Link</a>
+</div>
 
 <div>
-  <h1>Group 20 IIT</h1>
-  <p>Welcome to our task submission website</p>
+  <img src="Group20.png" style="float:left;max-width:200px;max-height:200px;">
 </div>
 
 <div class="tab">
